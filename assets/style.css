@@ -269,6 +269,7 @@ body {
     align-items: center;
     padding: 20px;
     z-index: 1000;
+    
 }
 
 .logo-container {
@@ -280,19 +281,18 @@ body {
     max-width: 600px;
     background-color: #141414;
     padding: 20px;
-    border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
 }
 
 .profile-content h2 {
     font-size: 50px;
     margin-bottom: 10px;
+    content: center;
 }
 
 .profile-img-container img {
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
+    width: 30%;
+    height: 30%;
 }
 
 .language-settings,
