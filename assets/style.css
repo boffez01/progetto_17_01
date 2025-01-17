@@ -1,0 +1,404 @@
+/* Stili personalizzati */
+body {
+    background-color: #111;
+    color: white;
+    margin-left: 5%; /* Margine sinistro per l'intera pagina */
+}
+
+/* Navbar orizzontale */
+.navbar {
+    background-color: #111;
+    padding: 1.5% 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-brand {
+    flex-shrink: 0; /* Impedisce al logo di ridursi */
+    max-width: 100px; /* Limita la larghezza massima del logo */
+}
+
+.navbar-brand img {
+    width: 100%; /* Imposta il logo per adattarsi al suo contenitore */
+    height: auto; /* Mantiene la proporzione dell'immagine */
+}
+
+/* Contenitore dei link */
+.navbar-collapse {
+    display: flex;
+    justify-content: flex-end; /* Allinea i link a destra */
+}
+
+/* Stile link navbar */
+.nav-link {
+    color: white !important;
+    margin-right: 15px; /* Distanza tra i link */
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.nav-link:hover {
+    color: #e50914 !important;
+}
+/*icone*/
+
+.header-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+  }
+  
+  .top-icons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 4%;
+  }
+   
+
+  .hero {
+    background-image: url('hero-image.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 35vh;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1%;
+    margin-right: 5%;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.hero-content h1 {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.genres-dropdown {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-right: auto;
+}
+
+.grids-container {
+    margin-top: -8%;
+    margin-left: 5%;
+    padding-right: 5%;
+}
+
+.header-icons-bottom {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    margin-top: 15px;
+}
+
+.icon-square {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #fcfcfc;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #111;
+    width: 40px;
+    height: 40px;
+}
+
+.icon-square i {
+    font-size: 20px;
+    color: rgba(252, 250, 250, 0.749);
+}
+
+
+
+/* Griglia responsive */
+.row {
+    display: flex;
+    flex-wrap: wrap; /* Permette di andare a capo quando non c'è spazio */
+}
+
+.col {
+    padding: 0 1px; /* Padding laterale tra le colonne */
+    flex: 1 0 16.666%; /* Imposta la larghezza per avere 6 colonne per riga */
+}
+
+/* Contenitore delle immagini */
+.movie-card {
+    width: 100%; /* Larghezza del contenitore dell'immagine al 70% */
+    margin: 0 auto; /* Centra il contenitore all'interno della colonna */
+}
+
+/* Stile per le immagini */
+.movie {
+    width: 100%; /* L'immagine occupa tutta la larghezza del contenitore */
+    height: auto; /* Mantiene la proporzione dell'immagine */
+}
+
+/* Dropdown */
+.genres-dropdown {
+    margin-left: 10px; /* Spazio tra il titolo e il dropdown */
+}
+
+/* Dropdown button */
+.genres-dropdown .btn {
+    border: 2px solid white; /* Bordo bianco */
+    border-radius: 0; /* Rimuove gli angoli arrotondati */
+    color: white; /* Colore del testo bianco */
+    background-color: #111; /* Colore di sfondo del bottone */
+}
+
+/* Dropdown menu */
+.dropdown-menu {
+    background-color: #111;
+    border: none;
+}
+.dropdown-menu.show {
+    display: block !important;
+}
+
+.dropdown-item {
+    color: white !important;
+}
+
+.dropdown-item:hover {
+    background-color: #575757;
+}
+/* Animazione di ingrandimento al passaggio del mouse */
+.movie-card {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+.movie-card:hover {
+  transform: scale(1.05); /* Ingigantisce il film al passaggio del mouse */
+}
+
+/* Stili generali footer */
+.footer {
+    background-color: #111;
+    color: rgba(121, 121, 121, 0.749);
+    text-align: center;
+    padding: 40px 0;
+}
+
+.footer-container {
+    width: 60%; /* Imposta la larghezza del footer al 50% */
+    margin: 0 auto; /* Centra il contenitore */
+    background-color: #111; /* Colore di sfondo nero come il resto */
+}
+
+/* Icone social */
+.social-icons {
+    display: flex;
+    justify-content: flex-start; /* Allinea le icone a sinistra */
+    gap: 20px;
+    margin-bottom: 20px;
+    padding-left: 0; /* Stesso margine sinistro */
+}
+
+.social-icon {
+    font-size: 24px;
+    color: rgba(121, 121, 121, 0.749);
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #e50914;
+}
+
+/* Parole divise in righe */
+.footer-text .row {
+    display: flex;
+    justify-content: flex-start; /* Allinea le righe a sinistra */
+    margin-bottom: 10px;
+    gap: 5%;
+    padding-left: 0; /* Uniforma l'allineamento a sinistra */
+    padding-left: 10px;
+}
+
+.footer-text .col {
+    width: 23%; /* Per avere 4 parole per riga */
+    text-align: left; /* Allinea le parole a sinistra */
+    padding-left: 0; /* Rimuove eventuali spazi */
+}
+
+/* Source Code */
+.source-code-container {
+    display: flex; /* Layout flexbox per posizionamento */
+    justify-content: flex-end; /* Allinea il quadrato a destra */
+    margin-top: 20px; /* Aggiunge spazio sopra il quadrato */
+    padding-right: 0; /* Stesso margine a destra */
+}
+
+.source-code {
+    background-color: #111;
+    width: 150px;
+    padding: 10px;
+    border: 1px solid #575757;
+    text-align: center;
+    margin-right: 0; /* Rimuove margini extra */
+}
+
+.source-code p {
+    margin: 0;
+    color: rgba(121, 121, 121, 0.749);
+    font-weight: bold;
+    font-size: 15px;
+}
+
+/* Copyright */
+.footer-copyright {
+    text-align: left;
+    margin-top: 20px;
+    padding-left: 0; /* Allinea tutto allo stesso punto */
+}
+
+.footer-copyright p {
+    font-size: 14px;
+    color: rgba(121, 121, 121, 0.749);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Stile di base per nascondere il profilo */
+.profile-page.hidden {
+    display: none;
+  }
+  
+  .profile-page {
+    position: fixed; /* Fissa la posizione a schermo intero */
+    top: 0;
+    left: 0;
+    width: 100vw; /* Larghezza a schermo intero */
+    height: 100vh; /* Altezza a schermo intero */
+    background-color: rgba(0, 0, 0, 0.8); /* Sfondo scuro con trasparenza */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    z-index: 1000; /* Assicura che il profilo si sovrapponga al contenuto esistente */
+  }
+  
+  /* Logo */
+  .logo-container {
+    margin-bottom: 20px;
+  }
+  
+  /* Profilo */
+  .profile-content {
+    width: 100%;
+    max-width: 600px; /* Imposta una larghezza massima per il contenuto */
+    background-color: #141414; /* Sfondo scuro per il contenuto */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8); /* Ombra per far risaltare il contenuto */
+  }
+  
+  .profile-content h2 {
+    font-size: 50px;
+    margin-bottom: 10px;
+  }
+  
+  .profile-img-container img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+  }
+  
+  .language-settings,
+  .maturity-settings,
+  .autoplay-controls {
+    margin: 20px 0;
+  }
+  
+  .language-dropdown {
+    margin-top: 10px;
+  }
+  
+  .maturity-box {
+    margin-top: 10px;
+  }
+  
+  .autoplay-options {
+    margin-top: 10px;
+  }
+  
+  hr {
+    width: 100%;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 20px 0;
+  }
+  
+  .large-hr {
+    width: 100%;
+    border: 0;
+    border-top: 2px solid #ccc;
+    margin: 20px 0;
+  }
+  
+  .action-buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .action-buttons button {
+    padding: 10px 20px;
+    background-color: #141414; 
+    color: #ccc;
+    border: 2px solid #ccc; 
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease; 
+    align-items: center;
+}
+
+.action-buttons button:hover,
+.action-buttons button:focus {
+    background-color: #fff; 
+    color: #141414; 
+    border: 2px solid #141414; 
+}
+
+  
+
+  #profile-toggle {
+    cursor: pointer;
+  }
+  
+  .profile-page.hidden {
+    display: none;
+  }
+  .logo-container {
+    position: absolute;
+    top: 10px; 
+    left: 10px; 
+  }
+  
+  .logo {
+    width: 100px; 
+    height: auto; 
+  }
+ 
